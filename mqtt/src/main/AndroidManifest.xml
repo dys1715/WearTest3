@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.winsion.sun_rise.mqtttest">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application>
+
+        <service
+            android:name="daemon.service.WearService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":gray" />
+
+        <!--<receiver-->
+            <!--android:name="daemon.receiver.WakeReceiver"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.wake.gray" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<service-->
+            <!--android:name="daemon.service.GrayService"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="false"-->
+            <!--android:process=":gray" />-->
+        <!--<service-->
+            <!--android:name="daemon.service.GrayService$GrayInnerService"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="false"-->
+            <!--android:process=":gray" />-->
+        <!--<service-->
+            <!--android:name="daemon.receiver.WakeReceiver$WakeNotifyService"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="false" />-->
+
+        <!--<service-->
+            <!--android:name="daemon.receiver.WakeReceiver$WakeGrayInnerService"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="false" />-->
+    </application>
+
+</manifest>

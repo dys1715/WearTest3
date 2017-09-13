@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="vertical"
+        tools:context="dys.weartest.MainActivity"
+        tools:deviceIds="wear_round">
+
+        <ImageView
+            android:id="@+id/iv_img1"
+            style="@style/icon_style"/>
+
+        <ImageView
+            android:id="@+id/iv_img2"
+            style="@style/icon_style"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:textSize="20sp"
+            android:text="处置"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
